@@ -36,8 +36,7 @@ var loadSearchHistory = function() {
     }
 
     savedSearchHistory = JSON.parse(savedSearchHistory);
-
-=    for (var i = 0; i < savedSearchHistory.length; i++) {
+    for (var i = 0; i < savedSearchHistory.length; i++) {
         searchHistoryList(savedSearchHistory[i]);
     }
 };
