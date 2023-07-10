@@ -36,6 +36,7 @@ var loadSearchHistory = function() {
     }
 
     savedSearchHistory = JSON.parse(savedSearchHistory);
+
     for (var i = 0; i < savedSearchHistory.length; i++) {
         searchHistoryList(savedSearchHistory[i]);
     }
@@ -159,7 +160,6 @@ $("#search-history-container").on("click", "p", function() {
     currentWeatherSection(previousCityName);
     fiveDayForecastSection(previousCityName);
 
-    //
     var previousCityClicked = $(this);
     previousCityClicked.remove();
 });
